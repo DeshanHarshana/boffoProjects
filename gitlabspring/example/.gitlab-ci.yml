@@ -1,0 +1,6 @@
+run_tests:
+  image: maven:3.8.6-openjdk-17
+  before_script:
+    - apt-get update
+  script:
+    - mvnw test
